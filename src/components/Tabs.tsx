@@ -40,6 +40,7 @@ const Tabs = ({ items, initialIndex = 0 }: TabsProps) => {
         role="tablist"
         aria-label="Speisekarte Kategorien"
         className="flex w-full gap-2 overflow-x-auto rounded-full border border-sage-100 bg-white/80 p-2 shadow-soft md:flex-wrap md:overflow-visible"
+        className="flex flex-wrap gap-2 rounded-full border border-sage-100 bg-white/80 p-2 shadow-soft"
         onKeyDown={onKeyDown}
       >
         {items.map((item, index) => {
@@ -64,6 +65,7 @@ const Tabs = ({ items, initialIndex = 0 }: TabsProps) => {
                 }
               }}
               className={`whitespace-nowrap rounded-full px-4 py-2 text-sm font-medium transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sage-400 focus-visible:ring-offset-2 focus-visible:ring-offset-cream ${
+              className={`rounded-full px-4 py-2 text-sm font-medium transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sage-400 focus-visible:ring-offset-2 focus-visible:ring-offset-cream ${
                 isActive
                   ? "bg-sage-500 text-white"
                   : "text-cocoa hover:text-sage-700"
