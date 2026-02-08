@@ -13,6 +13,7 @@ const Menu = () => {
         {section.subtitle && (
           <p className="text-sm italic text-cocoa">{section.subtitle}</p>
         )}
+        <div className="mt-6 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         <div className="mt-6 grid gap-4 md:grid-cols-2">
           {section.items.map((item) => (
             <Card key={item.name} className="relative">
